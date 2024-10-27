@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    margin :0;
+    background-color: #000000;
+      font-family: "Noto Sans TC", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    padding-top: 10px;
+}
+header i{
+    color: white;
+    border-radius: 50px; 
+}
+header i:hover{
+    background-color: #fff;
+    color: black;
+}
+header nav a{
+    padding: 6px 12px;
+    margin: auto;
+    margin-right: 25px;
+    color: white;
+    font-size: small;
+    font-size: 18px;
+    border-radius: 20px;
+}
+header nav a:hover{
+    background-color: #eee;
+    color: #000000;
+}
+.banner{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.1s;
+}
+.banner .bg-1{
+    background-image: url('img/0.png');
+}
+.banner .bg-2{
+    background-image: url('img/1.png');
+}
+.banner .bg-3{
+    background-image: url('img/2.png');
+}
+.banner .bg-4{
+    background-image: url('img/3.png');
+}
+.banner .bg-5{
+    background-image: url('img/4.png');
+}
+.banner .bg-6{
+    background-image: url('img/5.png');
+}
+.banner .bg-7{
+    background-image: url('img/6.png');
+}
+.banner .bg-8{
+    background-image: url('img/7.png');
+}
+.banner .bg-9{
+    background-image: url('img/8.png');
+}
+.dragon {
+    background-image: url("img/dragon.png");
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.fire{
+    background-image: url("img/fire.png");
+}
+.banner  h1{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11rem;
+    color: #fff;
+}
+.intro{
+    min-height: 50vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.intro img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.intro p{
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.special-skill{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+    font-size: 18px;
+}
+.skill h1{
+    font-size: 24px;
+}
+.skill{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition:  0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+.skill-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skill i{
+    width: 100px;
+    height: 100px;
+    color: #FFAA31;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#next{
+    position: absolute;
+    right: 50px;
+    top: 40%;
+}
+#prev{
+    position: absolute;
+    left: 50px;
+    top: 40%;
+}
+#prev, #next{
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+#prev:hover,
+#next:hover{
+    opacity: 1;
+}
+.portfolio-title{
+    margin-top: 100px;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.portfolio{
+columns: 300px;
+}
+.portfolio img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+.tab{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-size: 50%;
+}
+.tab .container{
+    width: 1140px;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+}
+#interest{
+    color: black;
+    background-size: cover;
+}
+#interest .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+}
+#interest .list{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    box-sizing: border-box;
+    gap: 0px;
+}
+#interest .list .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+#interest .list .item:nth-child(odd){
+    background-color: white;
+}
+#interest .list .item i{
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    color: #FFAA31;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#interest .list .item .name{
+    font-size: 1.5em;
+    margin-top: 0.7em;
+}
+#interest .list .item .des{
+    font-size: small;
+    opacity: 0.8;
+}
+#interest .list .item .des{
+        font-size: small;
+        opacity: 0.8;
+    }
+#interest .list .item:nth-child(even) .name, 
+#interest .list .item:nth-child(even) .des {
+    color: white;
+}
+.animation-show{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s;
+}
+.active .animation-show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.animation-show:nth-child(2){
+    transition-delay: 0.3s;
+}
+.animation-show:nth-child(3){
+    transition-delay: 0.6s;
+}
+.animation-show:nth-child(4){
+    transition-delay: 0.9s;
+}
+@media screen and (max-width: 768px){
+    .banner h1{
+        font-size: 5rem;
+    }
+    #interest .list{
+        padding: 0px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
