@@ -1,0 +1,88 @@
+.tab{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/bg.png);
+    background-size: 50%;
+}
+.tab .container{
+    width: 1140px;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+}
+/* skills */
+#skill{
+    background-color: #F2F0EB;
+    color: #eee;
+    background-image: linear-gradient(
+        45deg, #3A2530, #171514, #412726
+    );
+    background-size: cover;
+}
+#skill .list{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    box-sizing: border-box;
+    gap: 0px;
+}
+
+#skill .list .item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#skill .list .item2:nth-child(odd){
+    background-color: #3F2525;
+}
+#skill .list .item2 i{
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    color: #CA3EA7;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px #0005;
+}
+#skill .list .item2 .name{
+    font-size: 1.5em;
+    margin-top: 0.7em;
+}
+#skill .list .item2 .des{
+    font-size: small;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 767px){
+    #skill .list{
+        padding: 0px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #skill .list .item2:nth-child(odd){
+        background: unset;
+    }
+    #skill .list .item2:nth-child(2),
+    #skill .list .item2:nth-child(3n){
+        background: #3F2525;
+    }
+    #project .list{
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    #project .list .item3 img{
+        height: 100px;
+    }
+}

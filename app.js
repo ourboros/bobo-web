@@ -1,12 +1,11 @@
 let listBg = document.querySelectorAll('.bg');
-let dragon = document.querySelector('.dragon');
 let listTab = document.querySelectorAll('.tab');
 let portfolio = document.querySelectorAll(".portfolio")
 let titleBanner = document.querySelector('.banner h1');
+let skillBg = document.querySelector('.sbg1');
 window.addEventListener("scroll", (event) => {
     /*scrollY is the web scrollbar position (pixel)*/
     let top = this.scrollY;
-    let dragonOpacity = Math.min(top / 300, 1); 
     listBg.forEach((bg, index) => {
         if(index != 0 && index != 8){
             bg.style.transform = `translateY(${(top*index/2)}px)`;
@@ -14,10 +13,9 @@ window.addEventListener("scroll", (event) => {
             bg.style.transform = `translateY(${(top/3)}px)`;
         }
     })
-
-    dragon.style.opacity = dragonOpacity; 
-    dragon.style.transform = `translateY(${top}px)`;
     titleBanner.style.transform = `translateY(${(top*4/2)}px)`;
+    
+    skillBg.style.transform = `translateX(${(top/5)}px)`;
 
 
     listTab.forEach(tab =>{
@@ -58,6 +56,7 @@ function loadShow(){
     }
 }
 loadShow();
+
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 next.onclick = function(){
@@ -82,3 +81,5 @@ document.querySelectorAll('a[data-tab]').forEach(anchor => {
         }
     });
 });
+
+

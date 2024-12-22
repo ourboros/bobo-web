@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOBO</title>
+    <link rel="shortcut icon" href="img/logo0.5.png" type="image/x-icon">
+    <title>Stargazer BOBO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,144 +14,129 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-            <a data-tab="Me">關於我</a>
-            <a data-tab="skill">能力</a>
-            <a data-tab="intro">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <a data-tab="portfolio">作品集</a>
-            <a data-tab="interest">興趣</a>
-        </nav>
-    </header>
+    <nav>
+        <!-- Checkbox for toggling menu -->
+        <input type="checkbox" id="check">
+    
+        <!-- Menu icon -->
+        <label for="check" class="check-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+    
+        <!-- Site logo -->
+        <label class="logo">Stargazer</label>
+
+    
+        <!-- Navigation links -->
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#Me">關於我</a></li>
+          <li><a href="#skill">能力</a></li>
+          <li><a href="#portfolio">作品集</a></li>
+          <li><a href="#interest">興趣</a></li>
+        </ul>
+      </nav>
 
     <div id="intro" class="banner">
         <div class="bg bg-1"></div>
         <div class="bg bg-2"></div>
         <div class="bg bg-3"></div>
         <div class="bg bg-4"></div>
+        <h1>Stargazer BOBO </h1>
         <div class="bg bg-5"></div>
         <div class="bg bg-6"></div>
         <div class="bg bg-7"></div>
-        <h1>BOBO'S WEB</h1>
         <div class="bg bg-8"></div>
         <div class="bg bg-9"></div>
-        <div class="bg dragon"></div>
-        <div class="fire"></div>
     </div>
-
     <div id="Me" class="tab intro">
-        <h2 class="animation-show">關於我</h2>
+        <h2 class="animation-show">頻頻跌倒 重新站起 持續前進</h2>
         <img src="img/logo.png" alt="" class="animation-show">
         <p class="animation-show">
-        國立臺北教育大學碩士班一年級，充滿青春活力的碩士生。過去學習了動畫創作、介面設計、遊戲設計等多媒體設計相關技術；現在為了能自主開發前後端平台，我開始學習程式設計、後端架構、機器學習與深度學習等知識，同時不斷練習介面設計以提升自己的美感。同時，也持續加強英文能力，希望未來能前往世界各地增廣見聞。        </p>
-    </div>
-
-    <div id="skill" class="special-skill">
-        <div class="skill">
-            <div class="skill-item">
-                <i class="fa-solid fa-file-code"></i>
-                <h1>前端網站設計</h1>
-            使用HTML、CSS、Javascript來購艦出自己腦中的各種介面風格，使每個網站都獨一無二
-            </div>
+            國立臺北教育大學碩士班一年級，充滿青春活力的碩士生。在當上碩士生之前學習過許多不同的專業知識，雖然在尋求這些知識的道路上時常會碰壁，但我都能鼓勵自己為了更加充實自己的學問必須要持續努力下去。
         </div>
-        <div class="skill">
-            <div class="skill-item">
-            <i class="fa-solid fa-tablet-screen-button"></i>
-            <h1>介面設計</h1>
-            常用Adobe XD設計介面、現在嘗試學習使用Figma更多外部的插件和素材來設計並更好的與團隊溝通
+            <div id="skill" class="skill-title">
+                <h1>增廣見聞 培養技術</h1>
             </div>
-        </div>
-        <div class="skill">
-            <div class="skill-item">
-            <i class="fa-solid fa-paintbrush"></i>
-            <h1>繪畫</h1>
-            擅長鉛筆、色鉛筆素描、麥克筆在一張簡單的白紙上進行各種點與線的交河來進行海報或人物繪製
+        <div class="special-skill">
+            <div class="skill-banner">
+                <div class="sbg sbg1"></div>
+                <div class="sbg sbg2"></div>
             </div>
-        </div>
-        <div class="skill">
-            <div class="skill-item">
-            <i class="fa-solid fa-robot"></i>
-            <h1>程式設計</h1>
-            使用C、Python等程式語言建構一些簡單的系統，像是遊戲、交談機器人、資料庫系統
+            <div class="skill">
+                <div class="skill-item">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h1>前端網站設計</h1>
+                    使用HTML、CSS、Javascript來購艦出自己腦中的各種介面風格，使每個網站都獨一無二
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <div class="skill-item">
-            <i class="fa-solid fa-clapperboard"></i>
-            <h1>動畫製作</h1>
-            藉由Cartoon Animator, Adobe 系列軟體製作各種劇情項的2D動畫
+            <div class="skill">
+                <div class="skill-item">
+                <i class="fa-solid fa-tablet-screen-button"></i>
+                <h1>介面設計</h1>
+                常用Adobe XD設計介面、現在嘗試使用Figma來設計讓團隊溝通更有效率
+                </div>
             </div>
-        </div>
-
-        <button id="next">></button>
-        <button id="prev"><</button>
-    </div>
-<div id="portfolio" class="portfolio-title">
-    <h1>作品集</h1>
-</div>
-    <div class="portfolio">
-        <a href="portfolio.html">
-            <img src="img/P1.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P2.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P3.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P4.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P5.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P6.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P7.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P8.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P9.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P10.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P11.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P12.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P13.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P14.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P15.jpg" alt="" class="animation-show">
-        </a>
-        <a href="portfolio.html">
-            <img src="img/P16.jpg" alt="" class="animation-show">
-        </a>
-    </div>
+            <div class="skill">
+                <div class="skill-item">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h1>繪畫</h1>
+                在一張簡單的白紙上進行各種點與線的交匯來進行海報或人物繪製
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">
+                <i class="fa-solid fa-robot"></i>
+                <h1>程式設計</h1>
+                使用C、Python、Java等程式語言建構簡單系統
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">
+                <i class="fa-solid fa-clapperboard"></i>
+                <h1>動畫製作</h1>
+                藉由Cartoon Animator, Adobe 系列軟體製作各種2D動畫
+                </div>
+            </div>
     
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <div class="library-container">
+            <div id="portfolio" class="portfolio-title">
+                <h1>持續練習 創造藝術</h1>
+            </div>
+                <div class="portfolio">
+                    <div class="tab library">
+                        <div class="animation-show">
+                            <a href="art.html"><img src="img/P2.jpg"></a>
+                            <p>藝術創作</p>
+                        </div>
+                        <div class="animation-show">
+                            <a href="program.html"><img src="img/PJ1.jpg"></a>
+                            <p>程式設計</p>
+                        </div>            <div class="animation-show">
+                            <a href="poster.html"><img src="img/PT1.jpg"></a>
+                            <p>平面設計</p>
+                        </div>            <div class="animation-show">
+                            <a href="video.html"><img src="img/V1.png"></a>
+                            <p>影片剪輯</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
     <div id="interest" class="tab" >
-        <div class="container">
-            <div class="title animation-show">興趣</div>
-            <div class="list animation-show">
+        <div class="tab-container">
+            <div class="title animation-show">閒暇時間 培養興趣</div>
+            <div class="categorize">
+            <img src="img/interestbg.png" alt="">
+            <div class="list animation-show">      
                 <div class="item">
                     <i class="fa-solid fa-palette"></i>
                     <div class="name">繪畫</div>
                     <div class="des">
                         <!-- 7 -->
-                         將眼睛觀察到的事物購過手和筆一點一點在紙上雕刻
+                        將眼睛觀察到的事物購過手和筆一點一點在紙上雕刻
                     </div>
                 </div>
 
@@ -159,7 +145,7 @@
                     <div class="name">組電腦</div>
                     <div class="des">
                         <!-- 7 -->
-                         隨時關注電腦市場並練習組裝以幫助親朋好友組裝電腦
+                        隨時關注電腦市場並練習以幫助親朋好友組裝電腦
                     </div>
                 </div>
 
@@ -168,7 +154,7 @@
                     <div class="name">修電腦</div>
                     <div class="des">
                         <!-- 7 -->
-                         挑戰用報廢零組件重新清潔或修復讓電腦繼續使用
+                        挑戰用報廢零組件重新清潔或修復讓電腦繼續使用
                     </div>
                 </div>
 
@@ -177,7 +163,7 @@
                     <div class="name">玩遊戲</div>
                     <div class="des">
                         <!-- 7 -->
-                        將自己帶入到遊戲的腳色並體驗創作者所構想的故事和世界
+                        進入遊戲世界體驗創作者所構想的故事和世界
                     </div>
                 </div>
 
@@ -186,7 +172,7 @@
                     <div class="name">看書</div>
                     <div class="des">
                         <!-- 7 -->
-                        去圖書館尋找跟程式設計或繪畫技巧相關的書籍來增進使自己的技藝更加精進
+                        去圖書館尋找書籍來增進使自己的技藝更加精進
                     </div>
                 </div>
 
@@ -195,11 +181,42 @@
                     <div class="name">看電影</div>
                     <div class="des">
                         <!-- 7 -->
-                         觀看不同國家拍攝電影了解不同文化、拍攝手法並關閉字幕學習語言
+                        觀看各國電影了解不同文化和拍攝手法
                     </div>
                 </div>
-
+            </div>
+        </div>
+        </div>
+    </div>
+<footer>
+    <div class="f-banner">
+        <div class="fbg bg-1"></div>
+        <div class="fbg bg-2"></div>
+        <div class="fbg bg-3"></div>
+        <div class="fbg bg-4"></div>
+        <div class="fbg bg-5"></div>
+        <div class="fbg bg-6"></div>
+        <div>
+            <p>©Copyright All rights reserved.</p>
+        </div>
+        <div class="fbg bg-7"></div>
+        <div class="fbg bg-8"></div>
+        <h3>臺北市和平東路二段134號，國立臺北教育大學 數位科技設計學系</h3>
                 
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/frontmission150"><i class="fa-brands fa-facebook-f"></i></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/frontmission150/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://x.com/abbiter150"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
     <script src="app.js"></script>
 </body>
 </html>
